@@ -2,11 +2,11 @@
 
 ## Project Description:
 
-- The Nursery System REST API is backend API built with Node.js, Express.js, Mongoose, MongoDB, Multer, Bcrypt, and JWT. This API provides a secure and scalable solution for managing a nursery system.
+- The Nursery System REST API is a backend API built with Node.js, Express.js, Mongoose, MongoDB, Multer, Bcrypt, and JWT. This API provides a secure and scalable solution for managing a nursery system.
 
-- It uses `Mongoose` for object modeling, allowing for easy integration with other databases.
+- It uses `Mongoose` for object modeling, allowing easy integration with other databases.
 
-- Avatars of teachers can be uploaded using `Multer`, and stored in` MongoDB`.
+- Avatars of teachers can be uploaded using `Multer`, and stored in `MongoDB`.
 
 ## Installation
 To get started with the Nursery System REST API, follow these steps:
@@ -29,7 +29,7 @@ To get started with the Nursery System REST API, follow these steps:
 
 - `GET /child`: Retrieve a list of all children.
 - `GET /child/:id`: Retrieve a specific child record by ID.
-- `GET /child/:id/class`: Retrive the class of a specific child by its ID.
+- `GET /child/:id/class`: Retrieve the class of a specific child by its ID.
 - `POST /child`: Create a new child record.
 - `PATCH /child/:id`: Update a specific child record by ID.
 - `DELETE /child/:id`: Delete a specific child record by ID.
@@ -60,15 +60,15 @@ To get started with the Nursery System REST API, follow these steps:
 
 - `POST /login`: Login a teacher and receive an access token.
 
-> **Note:** All endpoints except for `POST /register` and `POST /login` require an access token in the Authorization header. The token can be obtained by logging in a teacher via `/login` endpoint.
+> **Note:** All endpoints except for `POST /register` and `POST /login` require an access token in the Authorization header. The token can be obtained by logging in a teacher via the `/login` endpoint.
 
 ### Authentication and Authorization
 
-- JSON Web Tokens (JWT) is used for authentication. Teachers can register, login, and receive an access token to access the protected endpoints.
-- All endpoints have a validation middleware using Express validator.
-- Passwords are encrypted with bcrypt.
+- `JSON Web Token (JWT)` is used for authentication. Teachers can register, login, and receive an access token to access the protected endpoints.
+- All endpoints have a validation middleware using `Express-validator`.
+- Passwords are encrypted with `bcrypt`.
 - The admin account has full access to all endpoints and other teachers can only see the data of its own and the class it supervises.
 
 ## Conclusion
 
-This nursery system REST provides a robust set of endpoints for managing information about child, classes, and teachers. The includes authentication and authorization features to ensure that only authorized users can access certain endpoints. It's a great starting point for building a larger nursery management system.
+This nursery system REST provides a robust set of endpoints for managing information about children, classes, and teachers. The includes authentication and authorization features to ensure that only authorized users can access specific endpoints. It's a great starting point for building a more extensive nursery management system.
