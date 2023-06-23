@@ -1,6 +1,6 @@
 # Nursery System REST API
 
-## Project Description:
+## Project Description
 
 - The Nursery System REST API is a backend API built with Node.js, Express.js, Mongoose, MongoDB, Multer, Bcrypt, and JWT. This API provides a secure and scalable solution for managing a nursery system.
 
